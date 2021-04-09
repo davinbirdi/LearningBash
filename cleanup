@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+update_index() {
+    ls -t *.png > index
+    read -r line < index; open -g "$line"
+}
+
+touch index
+
+update_index
+
+while  [ -s index ]; do
+    update_index
+
+    echo "Do you wish to delete:" "$line"
+    select yn in "Del" "Keep" "Quit"; do
+        case $yn in
+            Del  ) echo "Deleted" $line; rm "$line";     break;;
+            Keep ) echo "Keeping" $line; mv "$line" ..;  break;;
+	    Quit ) exit;;
+        esac
+    done
+
+    osascript -e 'quit app "Preview"'
+
+done
+
+
+
