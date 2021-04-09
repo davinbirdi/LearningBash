@@ -3,7 +3,11 @@
 ### Problem: I have too many screenshots on my desktop
 ### Solution: Automate looking at them and deciding to keep or delete them
 I really don't want to have to open each one up, then close it, then right click and delete.
-I can't just use the rm bash command because the titles are vague and don't tell me the contents.
+I can't just use the ```rm``` bash command because the titles are vague and don't tell me the contents.
+
+### Summary:
+I create a new folder and move all my screenshots into it, then using a ```bash``` script, it updates a list of .png files to open sequentially. Each time it opens an image, I get to input my choice to keep or delete it. I want to efficiently/automatically open the images to see the content and move onto the next one.
+
 
 ### Debrief:
 This went incredibly fast and I really liked how easy it was and that things opened and closed for me. Really effective way to view the contents of the file and then quickly decide if it's worth keeping or deleting.
