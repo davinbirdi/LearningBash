@@ -8,6 +8,10 @@ I can't just use the rm bash command because the titles are vague and don't tell
 ### Debrief:
 This went incredibly fast and I really liked how easy it was and that things opened and closed for me. Really effective way to view the contents of the file and then quickly decide if it's worth keeping or deleting.
 
+
+![In Action](https://github.com/davinbirdi/LearningBash/blob/main/CleaningUpScreenshots/cleanup-sc-2.png?raw=true)
+
+
 ### Process: 
 
 First Need to list all files of interest in one location:
